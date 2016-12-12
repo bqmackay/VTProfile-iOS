@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yyU-CH-VsU" customClass="VOInputTextTableViewCell" customModule="Profile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyU-CH-VsU" id="I2S-r0-LIV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-9V-Poh">
+                        <rect key="frame" x="10" y="5" width="300" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33.5" id="qOe-c3-NAv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QVF-9V-Poh" firstAttribute="top" secondItem="I2S-r0-LIV" secondAttribute="top" constant="5" id="0K3-vj-CRt"/>
+                    <constraint firstAttribute="trailing" secondItem="QVF-9V-Poh" secondAttribute="trailing" constant="10" id="AbO-2X-J7v"/>
+                    <constraint firstItem="QVF-9V-Poh" firstAttribute="leading" secondItem="I2S-r0-LIV" secondAttribute="leading" constant="10" id="Plr-Iw-7s8"/>
+                    <constraint firstAttribute="bottom" secondItem="QVF-9V-Poh" secondAttribute="bottom" constant="5" id="VUO-K5-ByB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="QVF-9V-Poh" id="cWU-9B-Q0Z"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="26"/>
+        </tableViewCell>
+    </objects>
+</document>
